@@ -4,6 +4,9 @@
     box-sizing: border-box;
 
 }
+body{
+    background-color: rgb(92, 6, 6);
+}
 div{
     text-align: center;
 }
@@ -12,6 +15,22 @@ div{
     transform-origin: center;
     transform-box: fill-box;
 
+}
+#left-wheel{
+    animation: wheel 1s  infinite linear; 
+    transform-origin: center;
+    transform-box: fill-box;
+
+}
+#manbike{
+    animation: bike 1s ease-in-out infinite alternate;
+    transform-origin: bottom;
+
+}
+#hat{
+    animation: hat 1s ease-in-out infinite alternate;
+     transform-origin: center;
+    transform-box: fill-box;
 }
 @keyframes wheel{
     from{
@@ -22,4 +41,24 @@ div{
                transform: rotateZ(360deg);
 
     }
+}
+@keyframes bike{
+    from{
+        transform: rotateX(0deg);
+
+    }
+    to{
+          transform: rotateX(20deg);
+
+    }
+}
+@keyframes {
+    from{
+        transform: translateY(0%);
+
+    }
+    to{
+          transform:translateY(30%);
+    }
+
 }
