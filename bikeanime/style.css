@@ -52,7 +52,7 @@ div{
 
     }
 }
-@keyframes {
+@keyframes hat {
     from{
         transform: translateY(0%);
 
@@ -60,5 +60,5 @@ div{
     to{
           transform:translateY(30%);
     }
-
 }
+
